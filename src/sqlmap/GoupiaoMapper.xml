@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.GoupiaoMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Goupiao">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="dianyingbianhao" property="dianyingbianhao" jdbcType="VARCHAR"/>
+                                    <result column="fenlei" property="fenlei" jdbcType="VARCHAR"/>
+                                    <result column="dianyingmingcheng" property="dianyingmingcheng" jdbcType="VARCHAR"/>
+                                    <result column="piaojia" property="piaojia" jdbcType="DECIMAL"/>
+                                    <result column="fangyingting" property="fangyingting" jdbcType="VARCHAR"/>
+                                    <result column="kaichangshijian" property="kaichangshijian" jdbcType="VARCHAR"/>
+                                    <result column="sanchangshijian" property="sanchangshijian" jdbcType="VARCHAR"/>
+                                    <result column="goumaishu" property="goumaishu" jdbcType="INTEGER"/>
+                                    <result column="xuanzuo" property="xuanzuo" jdbcType="VARCHAR"/>
+                                    <result column="xiaoji" property="xiaoji" jdbcType="DECIMAL"/>
+                                    <result column="goupiaoren" property="goupiaoren" jdbcType="VARCHAR"/>
+                                    <result column="dingpiaozhuangtai" property="dingpiaozhuangtai" jdbcType="VARCHAR"/>
+                                            <result column="iszf" property="iszf" jdbcType="VARCHAR"/>
+                            <result column="dianyingchangciid" property="dianyingchangciid" jdbcType="INTEGER"/>
+                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, dianyingbianhao, fenlei, dianyingmingcheng, piaojia, fangyingting, kaichangshijian, sanchangshijian, goumaishu, xuanzuo, xiaoji, goupiaoren, dingpiaozhuangtai, iszf, dianyingchangciid, addtime    </sql>
+    </mapper>

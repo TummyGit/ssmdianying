@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.DianyingchangciMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Dianyingchangci">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="dianyingbianhao" property="dianyingbianhao" jdbcType="VARCHAR"/>
+                                    <result column="fenlei" property="fenlei" jdbcType="VARCHAR"/>
+                                    <result column="dianyingmingcheng" property="dianyingmingcheng" jdbcType="VARCHAR"/>
+                                    <result column="dianyinghaibao" property="dianyinghaibao" jdbcType="VARCHAR"/>
+                                    <result column="piaojia" property="piaojia" jdbcType="DECIMAL"/>
+                                    <result column="fangyingting" property="fangyingting" jdbcType="VARCHAR"/>
+                                    <result column="kaichangshijian" property="kaichangshijian" jdbcType="VARCHAR"/>
+                                    <result column="sanchangshijian" property="sanchangshijian" jdbcType="VARCHAR"/>
+                                    <result column="shengyupiaoshu" property="shengyupiaoshu" jdbcType="INTEGER"/>
+                                                    <result column="dianyingxinxiid" property="dianyingxinxiid" jdbcType="INTEGER"/>
+                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, dianyingbianhao, fenlei, dianyingmingcheng, dianyinghaibao, piaojia, fangyingting, kaichangshijian, sanchangshijian, shengyupiaoshu, dianyingxinxiid, addtime    </sql>
+    </mapper>
